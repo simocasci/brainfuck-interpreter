@@ -54,7 +54,6 @@ public class Interpreter {
                     cells[dataPointer] = (byte) userInput; // no error is necessary, the byte class handles them
                     break;
                 case '[': {
-                    // stacks are boring
                     if (cells[dataPointer] == 0) {
                         int i = -1;
                         while (true) {
@@ -70,7 +69,6 @@ public class Interpreter {
                     break;
                 }
                 case ']': {
-                    // stacks are boring pt. 2
                     if (cells[dataPointer] != 0) {
                         int i = -1;
                         while (true) {
